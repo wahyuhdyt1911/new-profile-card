@@ -9,13 +9,12 @@
       <div class="img"></div>
       <h1>Wahyu Hidayat</h1>
       <div class="text">
-        Web Developer from <strong>Padang,Indonesia</strong>
+        I'm a Web Developer from <br />
+        <span style="font-weight: 400">Padang, Indonesia</span>
       </div>
       <p>
-        Halo,Selamat datang di halaman website saya.
-        <br />
-        Saya mahasiswa di UPI YPTK PADANG, <br />
-        berikut adalah beberapa account sosial media saya.
+        Halo,Selamat datang di halaman website saya. Saya mahasiswa di UPI YPTK
+        PADANG, berikut adalah beberapa account sosial media saya.
       </p>
       <ul class="link">
         <li>
@@ -61,6 +60,12 @@
   <script>
     var garis = document.querySelector(".garis");
     const time = new Date();
-    garis.value = time;
+    garis.value =
+      "Wahyu " +
+      time.getUTCDay() +
+      "-" +
+      time.getUTCMonth() +
+      "-" +
+      time.getUTCFullYear();
   </script>
 </html>
